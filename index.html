@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="style.css">
+ 
+</head>
+<body>
+
+<div class="container" id="start-screen">
+  <h2>Welcome to the Quiz!</h2>
+  <ul class="rules">
+    <li>✔ You have 15 seconds per question</li>
+    <li>✔ Each correct answer gives 1 point</li>
+    <li>✔ You can't go back to previous questions</li>
+    <li>✔ Score will be shown at the end</li>
+  </ul>
+  <button class="btn" onclick="startQuiz()">Start Quiz</button>
+</div>
+
+<div class="container hidden" id="quiz-screen">
+  <div id="timer">Time Left: 15s</div>
+  <div class="question" id="question">Question text</div>
+  <ul class="options" id="options"></ul>
+  <button class="btn" id="next-btn">Next</button>
+  <div class="score" id="score"></div>
+</div>
+<script src="script.js"></script>
+
+</body>
+</html>
